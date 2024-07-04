@@ -3,10 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef2f7;
-    color: #2c3e50;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333;
     line-height: 1.6;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Navigation Bar */
@@ -14,22 +14,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #0066cc, #004c99);
+    background: #1a1a1a; /* Dark gray background */
     padding: 1em 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Make navbar fixed */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    z-index: 1000;
     transition: background-color 0.3s;
 }
 
 .navbar-brand {
     font-size: 1.5em;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #ff6600; /* Orange hover color */
 }
 
 .navbar-links {
@@ -40,20 +45,19 @@ body {
 }
 
 .navbar-links li {
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
 
 .navbar-links a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
     transition: background 0.3s, color 0.3s;
 }
 
 .navbar-links a:hover {
-    background-color: #004c99;
-    border-radius: 5px;
-    color: #eef2f7;
+    background-color: #ff6600; /* Orange background on hover */
+    color: #1a1a1a; /* Dark text color on hover */
 }
 
 /* Mobile Menu */
@@ -66,7 +70,7 @@ body {
 .navbar-toggle .bar {
     height: 4px;
     width: 25px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin: 3px 0;
     transition: transform 0.3s, opacity 0.3s;
 }
@@ -87,17 +91,17 @@ body {
 .section {
     padding: 3em 2em;
     margin: 1em auto;
-    margin-top: 30px; /* Add margin to prevent content from hiding behind navbar */
+    margin-top: 30px; /* Adjusted to accommodate navbar */
     max-width: 1000px;
-    background: #ffffff;
+    background: #fff; /* White background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .section:hover {
-    transform: translateY(-10px);
-    background-color: #f7f9fc;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .content {
@@ -106,9 +110,14 @@ body {
 
 .section h2 {
     font-weight: 700;
-    font-size: 2em;
-    color: #0066cc;
+    font-size: 2.5em;
+    color: #333;
     margin-bottom: 0.5em;
+    transition: color 0.3s;
+}
+
+.section:hover h2 {
+    color: #ff6600; /* Orange color on hover */
 }
 
 .section p, .section ul {
@@ -117,6 +126,11 @@ body {
     text-align: left;
     margin: 1em 0;
     padding: 0 1em;
+    transition: color 0.3s;
+}
+
+.section:hover p, .section:hover ul {
+    color: #555; /* Darker text color on hover */
 }
 
 /* Profile Section */
@@ -129,7 +143,7 @@ body {
 
 .profile-pic {
     border-radius: 50%;
-    border: 4px solid #0066cc;
+    border: 4px solid #1a1a1a;
     width: 150px;
     height: 150px;
     margin-bottom: 1em;
@@ -138,14 +152,14 @@ body {
 
 .profile-pic:hover {
     transform: scale(1.05);
-    border-color: #004c99;
+    border-color: #ff6600; /* Orange border on hover */
 }
 
 /* CV Button */
 #cv .btn {
     display: inline-block;
-    background-color: #0066cc;
-    color: #ffffff;
+    background-color: #1a1a1a;
+    color: #fff;
     padding: 0.75em 1.5em;
     font-size: 1.1em;
     border: none;
@@ -156,21 +170,21 @@ body {
 }
 
 #cv .btn:hover {
-    background-color: #004c99;
+    background-color: #333;
     transform: translateY(-5px);
 }
 
 /* Contact Section */
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
 }
 
 .social-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1em;
 }
 
@@ -178,69 +192,35 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    color: #0066cc;
+    color: #1a1a1a;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 .social-link:hover {
-    color: #004c99;
+    color: #ff6600; /* Orange color on hover */
 }
 
 .social-link i {
     font-size: 1.5em;
 }
 
-.contact-form {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.75em;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: border-color 0.3s, background-color 0.3s;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: #0066cc;
-    background-color: #eef2f7;
-}
-
-.contact-form button {
-    background-color: #0066cc;
-    color: #ffffff;
-    padding: 0.75em 1.5em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form button:hover {
-    background-color: #004c99;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 1em;
-    background: linear-gradient(135deg, #0066cc, #004c99);
-    color: #ffffff;
+    background: #1a1a1a;
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #333; /* Dark background on hover */
 }
 
 /* Responsive Design */
@@ -249,7 +229,7 @@ footer {
         display: none;
         flex-direction: column;
         text-align: center;
-        background: linear-gradient(135deg, #0066cc, #004c99);
+        background: #1a1a1a;
         position: absolute;
         width: 100%;
         top: 60px;
@@ -284,9 +264,5 @@ footer {
         flex-wrap: wrap;
         gap: 0.5em;
         justify-content: center;
-    }
-
-    .contact-form {
-        width: 100%;
     }
 }
