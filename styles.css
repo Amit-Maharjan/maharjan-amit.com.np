@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #ff6600; /* Orange hover color */
+    color: #de814d; /* Orange hover color */
 }
 
 .navbar-links {
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #ff6600; /* Orange background on hover */
+    background-color: #de814d; /* Orange background on hover */
     color: #1a1a1a; /* Dark text color on hover */
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .section:hover h2 {
-    color: #ff6600; /* Orange color on hover */
+    color: #de814d; /* Orange color on hover */
 }
 
 .section p, .section ul {
@@ -164,7 +164,7 @@ body {
 
 .profile-pic:hover {
     transform: scale(1.05);
-    border-color: #ff6600; /* Orange border on hover */
+    border-color: #de814d; /* Orange border on hover */
 }
 
 /* CV Button */
@@ -211,7 +211,7 @@ body {
 }
 
 .social-link:hover {
-    color: #ff6600; /* Orange color on hover */
+    color: #de814d; /* Orange color on hover */
 }
 
 .social-link i {
