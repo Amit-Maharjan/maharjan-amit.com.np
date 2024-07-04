@@ -127,10 +127,20 @@ body {
     margin: 1em 0;
     padding: 0 1em;
     transition: color 0.3s;
+    font-family: 'Poppins', sans-serif; /* Ensuring font consistency */
 }
 
 .section:hover p, .section:hover ul {
     color: #555; /* Darker text color on hover */
+}
+
+/* Experience Section - Ensuring Nested List Consistency */
+.section ul ul {
+    font-family: 'Poppins', sans-serif; /* Ensuring font consistency for nested lists */
+    font-size: 1em; /* Slightly smaller font size for nested lists */
+    line-height: 1.4; /* Adjusted line height for readability */
+    margin-left: 1.5em; /* Indentation for nested lists */
+    list-style-type: circle; /* Different bullet style for nested lists */
 }
 
 /* Profile Section */
