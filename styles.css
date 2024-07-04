@@ -7,6 +7,7 @@ body {
     color: #333;
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
+    text-align: justify; /* Justify all text in the body */
 }
 
 /* Navigation Bar */
@@ -97,6 +98,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    text-align: justify; /* Justify text within sections */
 }
 
 .section:hover {
@@ -123,7 +125,7 @@ body {
 .section p, .section ul {
     font-weight: 300;
     font-size: 1.1em;
-    text-align: left;
+    text-align: justify;
     margin: 1em 0;
     padding: 0 1em;
     transition: color 0.3s;
