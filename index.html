@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amit Maharjan</title>
-    <link rel="stylesheet" href="styles.css?ver=1.3">
+    <link rel="stylesheet" href="styles.css?ver=1.4">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#cv">Download CV</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -172,6 +173,69 @@
         </ul>
     </div>
 </section>
+
+<section id="projects" class="section">
+    <div class="content">
+        <h2>Projects</h2>
+        <ul>
+            <li style="margin-bottom: 15px;">
+                <strong>CAS - Central Authentication Service</strong><br>
+                The project CAS at Cedar Gate is the customized form of <a href="https://www.apereo.org/projects/cas" target="_blank">
+                Apereo CAS </a> which is an open-source Java server component. It supports Single Sign-On (SSO)
+                functionality across different products and services introduced by Cedar Gate. As the name suggests, it
+                is mainly used for authentication, but not limited. CAS supports username-password login and SAML login
+                along with multi factor authentication. It is also used for Clickwrap Agreement, SAML Authorization,
+                Proxy Authentication, Maintaining different password policies along with an ability to determine
+                compromised and commonly used passwords and many more.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>UM - User Management</strong><br>
+                User Management (UM) is a web application which is used to perform user related operations. It provides
+                an ability to create/edit/disable user(s), grant/revoke client and service level access to user(s),
+                generate different kinds of user related reports (Manually via the UI/Automatic via the CRON), add/edit
+                client, add/edit/delete service/role/permission along with different level of access that is required
+                across different products of Cedar Gate.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>Security Core Plugin</strong><br>
+                Security Core Plugin is a common plugin developed under grails 2.5.1, 3.1.4, 3.3.8 and 4.0.10 and used
+                by all the products of Cedar Gate as a part for authorization and querying user related records from
+                database. It holds all the user related domains maintained for adopting HQL and Hibernate queries.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>Security Plugin</strong><br>
+                Security Plugin is a common plugin used for authentication which is developed under grails 2.5.1, 3.1.4,
+                3.3.8 and 4.0.10 and used by all the products of Cedar Gate. It is developed on the top of Spring
+                Security which uses Spring Security Core and Spring Security CAS to authorize the user that was
+                authenticated by CAS at the prior stage. This plugin is used as a communicating agent between CAS and
+                the application that uses the plugin.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>Deertrack Plugin</strong><br>
+                Deertrack Plugin is a common plugin which is used for tracking user activity. Similar to all other
+                plugins, it is also developed under grails 2.5.1, 3.1.4, 3.3.8 and 4.0.10 and is used by all the
+                products of Cedar Gate. It stores information about the pages visited by the user during his/her active
+                session along with the browser details, start-end time and total time spent on a single page. These data
+                are later used for generating different kinds of reports in UM.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <strong>Hamro College</strong><br>
+                An Android based application program which is helpful to students, teachers and any other college staffs
+                who are associated with the academic purpose of the college. This application can take attendance, send
+                notifications, view daily class routine, calculate final internal marks and many more college
+                activities. This application was developed as a Major Project where I contributed on some portions of UI
+                design, Report Development and Data Collection.
+            </li>
+            <li>
+                <strong>Optical Character Recognition Using Neural Network</strong><br>
+                A program written in Python language which scans the image having Devanagari script and converts in into
+                machine encoded text form. This program was developed as a Minor Project which consists of two parts:
+                Image Processing and Machine Learning where I contributed on some portions of Image Processing.
+            </li>
+        </ul>
+    </div>
+</section>
+
 
 <section id="cv" class="section">
     <div class="content">
