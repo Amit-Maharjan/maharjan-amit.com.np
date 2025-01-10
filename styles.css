@@ -282,3 +282,8 @@ footer:hover {
         justify-content: center;
     }
 }
+
+.project-desc {
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
