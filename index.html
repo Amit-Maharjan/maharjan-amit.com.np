@@ -25,7 +25,7 @@
             <li><a href="#profile">Profile</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Personal Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#resume">Download Resume</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -39,11 +39,15 @@
         <div class="profile-container">
             <img src="images/personal_picture.jpeg" alt="Amit Maharjan" class="profile-pic">
             <p>
-                Experienced Java Full-Stack Engineer with 4+ years of expertise in Spring Framework, Spring Boot, Microservices,
-                and Cloud Computing. Skilled in backend development, RESTful API design, and cloud-native applications. Proficient
-                in SQL and NoSQL databases (MySQL, PostgreSQL, MongoDB, Redis), along with DevOps and cloud technologies like AWS,
-                Docker, and Kubernetes. Strong knowledge of Spring Cloud, API Gateway, OAuth2, JWT authentication, and building
-                scalable, secure, and efficient systems. Experienced in Agile development, CI/CD pipelines, and software optimization.
+                Hands-on full-stack developer with over 6 years of enterprise experience in Java, Angular, Spring
+                Boot, and cloud-native services on AWS. Specialized in microservices architecture, API design,
+                event-driven systems, and building scalable, testable, and resilient platforms. Skilled in frontend
+                development using TypeScript, Material UI, and RxJS for dynamic, responsive applications.
+                Proficient in CI/CD processes, containerized deployments with Docker, and testing strategies using
+                JUnit, Mockito, and performance tools like JMeter. Worked across SQL and NoSQL ecosystems with
+                PostgreSQL, MongoDB, and DynamoDB. Strong communicator in Agile teams with cross-functional
+                participation in sprint activities, architecture reviews, and production deployments. Deeply involved in
+                system monitoring using Splunk, OpenTelemetry, and Spring Actuator metrics.
             </p>
         </div>
     </div>
@@ -54,71 +58,191 @@
         <h2>Experience</h2>
         <ul>
             <li>
-                <strong>East Tennessee State University, Johnson City, TN</strong><br>
-                <i>Graduate Teaching Assistant, Aug 2023 - Present</i><br>
-                Responsibilities:
+                <strong>Carta, San Francisco, California</strong><br>
+                <i>Software Engineer, Dec 2023 - Present</i><br><br>
+
+                <span>
+                    <strong><u>Cap Table Explorer:</u></strong><br>
+                    Created APIs using Java and Spring Boot to support a dynamic cap table viewer, integrating
+                    data from PostgreSQL and exposing ownership breakdowns by entity and share class. Built Angular
+                    components that allow users to drill into shareholder positions, transaction history, and dilution
+                    scenarios. This helped Carta’s legal and finance clients visualize ownership structure during funding
+                    rounds.
+                </span><br><br>
+
+                <strong><u>Responsibilities:</u></strong><br>
                 <ul>
-                    <li>Instructed and facilitated labs for CSCI-1100 (Using Information Technology) and CSCI-3110 (Advanced Topics in Web Development), engaging students in both in-person and online formats.</li>
-                    <li>Enhanced the CSCI-1100 curriculum by integrating AI and digital citizenship modules, leading to increased student engagement and improved course performance.</li>
-                    <li>Provided academic support through weekly office hours, assisting students with coursework and mentoring new Graduate Assistants.</li>
-                    <li>Led hands-on labs covering C#, Web Development, SQL Server, and cloud deployment, ensuring students gained practical, real-world experience.</li>
+                    <li>Built Java 21 microservices using Spring Boot and Spring Profiles to manage
+                    environment-specific configurations and streamline config refresh without downtime.</li>
+                    <li>Developed Angular 16 modules using lazy loading and interceptors to inject tokens, handle
+                    auth failures, and reduce initial bundle size for dashboard UI.</li>
+                    <li>Implemented Kafka consumer with schema validation for order events using Avro and
+                    configured alerting dashboards to track consumer lag and partition offsets.</li>
+                    <li>Designed RESTful APIs in Java using @RestController and custom response wrappers to
+                    centralize response metadata across microservices for UI consumption.</li>
+                    <li>Implemented circuit breaker and fallback logic using Resilience4j to keep critical flows
+                    functional during failures from downstream services.</li>
+                    <li>Used TypeScript to create shared Angular services for error handling and reusable form
+                    logic with async validation and dynamic control rendering.</li>
+                    <li>Wrote unit tests for Java applications with JUnit and Mockito using custom stubs and verified
+                    internal service behavior without relying on external dependencies.</li>
+                    <li>Utilized Java Streams and Lambda expressions for collection transformations, parallel
+                    processing, and functional-style programming in business logic.</li>
+                    <li>Managed asynchronous flows using Kafka producers for background processing queues in
+                    audit generation and notification delivery systems.</li>
+                    <li>Created and maintained AWS CloudFormation templates to provision ECS services,
+                    Application Load Balancers (ALBs), IAM roles and RDS instance components.</li>
+                    <li>Handled PostgreSQL and MongoDB integrations for different modules using JPA for
+                    relational data and MongoRepository for flexible document queries.</li>
+                    <li>Used Spring Security with JWT and RBAC filters to validate user roles, integrate OAuth2,
+                    and restrict access by route and scope.</li>
+                    <li>Created dashboards with Angular Material and connected them via REST APIs, including
+                    custom pagination logic and filter pipelines in frontend.</li>
+                    <li>Developed AWS Lambda functions in Python triggered by S3 events, SNS topics, and
+                    DynamoDB streams to handle asynchronous processing tasks.</li>
+                    <li>Used AWS ECS with Docker containers to deploy services and fetched secrets using AWS
+                    Parameter Store for config injection.</li>
+                    <li>Scheduled file cleanup using AWS Lambda and S3 lifecycle policies to archive old records
+                    and keep the cost of storage minimal.</li>
+                    <li>Built CI/CD pipelines in Jenkins to validate builds and run JUnit and Mockito tests before
+                    Docker image creation for ECS deployments.</li>
+                    <li>Monitored services using New Relic and Spring Boot Actuator for thread pool usage,
+                    memory consumption, and API call performance.</li>
+                    <li>Delivered real-time collaboration across developers and testers by documenting flows in
+                    Confluence and discussing test integration strategies.</li>
+                    <li>Participated in Agile ceremonies to estimate tickets and regularly led backend-frontend
+                    handoffs for sprint deliverables.</li>
                 </ul>
+
+                <span>
+                    <strong><u>Technological Environment:</u></strong><br>
+                    Java 17/21, Angular 16, Spring Boot, Spring Profiles, Spring Actuator, RESTful APIs,
+                    TypeScript, Kafka, Schema Registry, MongoDB, PostgreSQL, RDS, JWT, OAuth2, RBAC, Spring
+                    Security, AWS ECS, EC2, Lambda, S3, Python, Parameter Store, Cloudformation, Docker, JUnit,
+                    Mockito, Redis, CI/CD, Jenkins, New Relic, Agile, Splunk, Confluence
+                </span><br><br>
             </li>
 
             <li>
-                <strong>Cedar Gate Technologies, Kathmandu, Nepal</strong><br>
-                <i>Software Engineer, Dec 2020 - Jul 2023</i><br>
-                Responsibilities:
+                <strong>Cedar Gate Technologies, Greenwich, CT</strong><br>
+                <i>Software Engineer, June 2021 - July 2023</i><br><br>
+
+                <span>
+                    <strong><u>Member Account Summary Portal:</u></strong><br>
+                    Built a backend service using Java and Spring Boot to fetch and organize healthcare plan
+                    details by provider, tier, and cost structure for side-by-side comparison. Developed a dynamic Angular
+                    interface with filters, expandable rows, and paginated results to help business analysts and support
+                    teams quickly assess plan differences. The tool addressed a growing need for transparent benefit
+                    comparison across custom payer networks. Integrated with internal APIs using version control and
+                    feature toggles to allow phased updates without UI downtime.
+                </span><br><br>
+
+                <strong><u>Responsibilities:</u></strong><br>
                 <ul>
-                    <li>Directed the design, development, and deployment of 2 enterprise web applications and 6 plugins, adhering to Agile methodology with a 4-week sprint cycle and 1-week hotfix period, ensuring on-time releases while maintaining stringent quality standards.</li>
-                    <li>Mentored and guided the development team by conducting code reviews, knowledge-sharing sessions, and enforcing best engineering practices, promoting a collaborative and growth-oriented environment.</li>
-                    <li>Deployed and maintained authentication services on AWS EC2 with Tomcat, providing local access for 100+ developers.</li>
-                    <li>Built and optimized caching strategies using Redis and AWS ElastiCache, significantly improving application responsiveness and scalability.</li>
-                    <li>Worked on microservices architecture, enhancing inter-service communication and improving system resilience.</li>
-                    <li>Integrated DevOps practices, streamlining deployment workflows and CI/CD pipelines for faster and more efficient releases.</li>
-                    <li>Collaborated closely with cross-functional teams, including QA, product management, and DevOps, to align development efforts with business goals.</li>
-                    <li>Troubleshot and optimized backend performance, identifying and resolving bottlenecks to enhance system efficiency and reliability.</li>
-                    <li>Implemented security best practices, securing APIs and authentication mechanisms with OAuth2, JWT, and Spring Security.</li>
+                    <li>Refactored Java 11 legacy monolith to modular microservices using Spring Boot with DTO
+                    layers and centralized config server.</li>
+                    <li>Developed Angular 14 UI components using RxJS observables and debounce techniques to
+                    manage auto-suggestions and form submissions in real-time dashboards.</li>
+                    <li>Built RESTful APIs with Spring Boot and used request validation via @Valid and exception
+                    translation for consistent frontend error handling.</li>
+                    <li>Migrated legacy UI into Angular 14 using Material Design, integrating with versioned Java
+                    APIs and lazy-loaded feature modules to optimize load times and routing.</li>
+                    <li>Implemented Kafka consumer retries with dead-letter queues and topic-level error counters
+                    for failed records to enhance data traceability.</li>
+                    <li>Configured MySQL for transactional consistency in Java microservices and used MongoDB
+                    for flexible logging and real-time insights via Spring Data integrations.</li>
+                    <li>Set up Spring Cloud Gateway for header-based routing, auth token validation, and
+                    forwarding rules across multiple downstream microservices.</li>
+                    <li>Created Docker images with custom healthcheck scripts and used Jenkins pipelines to
+                    deploy into staging and prod via blue-green strategy.</li>
+                    <li>Used AWS services, including Lambda and CloudWatch for automated job execution and log
+                    alerting on high-memory usage scenarios.</li>
+                    <li>Containerized microservices using Docker and deployed them to Kubernetes clusters with
+                    Helm charts to manage environment-specific configurations and secrets.</li>
+                    <li>Connected APIs to DynamoDB for session tracking with TTL values so that stale entries could
+                    be purged without explicit cleanup logic.</li>
+                    <li>Wrote unit tests using JUnit and used Mockito to mock inter-service dependencies and verify
+                    conditional flows inside service methods.</li>
+                    <li>Logged application traces in Splunk using Java-based structured logging, and configured
+                    alert pipelines for Kafka retry failures and service-specific error codes.</li>
+                    <li>Used Python with Pandas and JSON libraries to reformat legacy data into REST-friendly
+                    structures that were ingested by Spring Boot services for initial system migration.</li>
+                    <li>Enabled file upload via AWS S3 using signed URLs with session expiration to prevent
+                    unauthorized overwrites from external clients.</li>
+                    <li>Participated in Agile grooming and sprint reviews, discussed API readiness with frontend
+                    teams, and clarified acceptance criteria with QA.</li>
+                    <li>Set up GitHub Actions for build validation and PR enforcement so that only successfully tested
+                    code could merge to the main branch.</li>
+                    <li>Used TypeScript in Angular for strict typing across services and forms and managed shared
+                    models in a central workspace library.</li>
+                    <li>Designed versioned microservices using backward-compatible payloads and feature flags to
+                    allow phased rollouts without UI disruption.</li>
                 </ul>
 
-                <i>Associate Software Engineer, Jun 2019 - Nov 2020</i><br>
-                Responsibilities:
-                <ul>
-                    <li>Developed and enhanced authentication systems, working on enterprise-wide security solutions using Spring Security, Apereo CAS, and SAML.</li>
-                    <li>Implemented backend services and APIs for enterprise applications, ensuring secure and efficient communication between microservices.</li>
-                    <li>Designed and optimized SQL queries and indexing strategies, improving database performance and ensuring faster data retrieval.</li>
-                    <li>Integrated logging and monitoring solutions with AWS CloudWatch and ELK Stack, allowing for real-time tracking and proactive issue resolution.</li>
-                    <li>Built and improved automation workflows, implementing cron jobs and Amazon SQS for efficient data processing and logging.</li>
-                    <li>Worked closely with senior engineers, contributing to system architecture discussions and providing solutions for performance and scalability challenges.</li>
-                    <li>Collaborated with cross-functional teams, including QA, DevOps, and DBA, to ensure seamless integration and deployment.</li>
-                    <li>Participated in Agile development cycles, engaging in sprint planning, daily standups, and retrospectives to drive continuous improvement.</li>
-                    <li>Gained hands-on experience in cloud infrastructure by assisting in the deployment and maintenance of services on AWS EC2, S3, and RDS.</li>
-                </ul>
+                <span>
+                    <strong><u>Technological Environment:</u></strong><br>
+                    Java 11, Angular 14, Spring Boot, RESTful APIs, Python, Spring Cloud Gateway, Kafka,
+                    Mysql, MongoDB, DynamoDB, RxJS, TypeScript, Docker, Jenkins, Kubernetes, Lambda, S3,
+                    CloudWatch, CI/CD, JUnit, Mockito, GitHub, Agile, Splunk, Material UI, Microservices
+                </span><br><br>
             </li>
 
             <li>
-                <strong>Leapfrog Technology Inc., Kathmandu, Nepal</strong><br>
-                <i>Software Engineering Intern, Mar 2019 - May 2019</i><br>
-                Responsibilities:
-                <ul>
-                    <li>Developed and optimized frontend components for web applications using JavaScript, HTML, CSS, and Bootstrap, ensuring cross-browser compatibility and a smooth user experience.</li>
-                    <li>Implemented performance improvements, including lazy loading and asset optimization, to enhance page load times.</li>
-                    <li>Gained hands-on experience with Agile methodologies, participating in standups, sprint planning, and peer code reviews.</li>
-                    <li>Contributed to debugging and troubleshooting, resolving UI inconsistencies and improving overall application stability.</li>
-                </ul>
-            </li>
+                <strong>Leapfrog Technologies, Seattle, WA</strong><br>
+                <i>Java Developer, Dec 2018 - May 2021</i><br><br>
 
-            <li>
-                <strong>Agile Solutions Pvt. Ltd., Kathmandu, Nepal</strong><br>
-                <i>Trainee, Nov 2018 - Feb 2019</i><br>
-                Responsibilities:
+                <span>
+                    <strong><u>Employee Benefits Enrollment Tool:</u></strong><br>
+                    Developed backend Spring services to manage employee benefit selections and retrieve
+                    eligibility rules tied to department codes and employment types. Built the Angular UI with dynamic
+                    forms and custom validators to support conditional questions based on selected plan types. This
+                    helped HR teams track benefit enrollment during open periods and provided summaries for payroll
+                    coordination. Replaced older SOAP-based flows with modern REST endpoints to improve consistency
+                    across new reporting modules.
+                </span><br><br>
+
+                <strong><u>Responsibilities:</u></strong><br>
                 <ul>
-                    <li>Worked on an ERP system using Microsoft Dynamics NAV, contributing to business process automation and system enhancements.</li>
-                    <li>Assisted in data migration efforts, ensuring high data integrity and a seamless transition from legacy ERP systems.</li>
-                    <li>Developed and tested backend components, handling business logic and database interactions.</li>
-                    <li>Collaborated with senior engineers, learning best practices for database management, API integrations, and software deployment.</li>
-                    <li>Gained exposure to enterprise application development, working in a structured environment with version control and CI/CD pipelines.</li>
+                    <li>Built Java 8 services using Spring MVC and DAO-based persistence layer to connect to
+                    MySQL for employee and department record management.</li>
+                    <li>Used Angular 10 and Reactive Forms for dynamic form field rendering and created validation
+                    messages using a shared TypeScript service.</li>
+                    <li>Parsed and validated incoming XML files using JAXB and transformed them into domain
+                    models through custom converters.</li>
+                    <li>Consumed external SOAP services using WSDL definitions and performed schema validation
+                    before request processing using XSD.</li>
+                    <li>Developed JSP views and backend controllers in Spring MVC pattern to render tables,
+                    charts, and CRUD screens using JSTL.</li>
+                    <li>Used jQuery to make AJAX calls for auto-refresh widgets and in-page content updates within
+                    dashboard modules.</li>
+                    <li>Stored temporary objects and expired records in MongoDB and wrote cleanup shell scripts
+                    scheduled via Linux cron jobs.</li>
+                    <li>Deployed WAR files to Apache Tomcat with manual configuration edits and restart sequences
+                    controlled through systemd scripts.</li>
+                    <li>Logged errors using Log4J into custom file paths and built grok patterns to ingest them into
+                    older Splunk dashboards.</li>
+                    <li>Added RESTful endpoints in Spring Boot to serve newer modules and replaced SOAP
+                    integrations with modern JSON-based alternatives.</li>
+                    <li>Wrote JUnit and Mockito tests for DAO and service classes and built a regression suite for
+                    critical reporting flows.</li>
+                    <li>Handled legacy MVC setup using JSP, Servlets, and form-based authentication using session
+                    cookies and Servlet filters.</li>
+                    <li>Managed config-driven routing and role-based redirection using JavaScript logic in JSP
+                    templates for different user roles.</li>
+                    <li>Used Agile methodology with weekly sprints and performed sprint demo of CRUD workflows
+                    and reporting module updates.</li>
+                    <li>Built HTML templates with Bootstrap and CSS for legacy modules' responsive layouts and
+                    custom UI sections.</li>
+                    <li>Used XML transformations in payroll flows to convert internal records into
+                    government-compliant XML formats for SOAP submission.</li>
                 </ul>
+
+                <span>
+                    <strong><u>Technological Environment:</u></strong><br>
+                    Java 8, Angular 10, Spring, Spring Boot, RESTful APIs, MVC, JSP, JSTL, SOAP, XML, JAXB,
+                    WSDL, XSD, TypeScript, Reactive Forms, JavaScript, jQuery, MongoDB, MySQL, WAR, Tomcat,
+                    Log4J, JUnit, Mockito, AJAX, Agile, HTML, CSS, Linux
+                </span><br><br>
             </li>
         </ul>
     </div>
@@ -129,7 +253,7 @@
         <h2>Education</h2>
         <ul>
             <li style="margin-bottom: 15px;">
-                <strong>Master’s in Computer Science (Software Engineering), Aug 2023 - May 2025</strong><br>
+                <strong>Master’s in Computer Science (Software Engineering)</strong><br>
                 <i>East Tennessee State University, Johnson City, TN</i><br>
                 GPA: 4.0<br>
                 Honors: Graduate Teaching Assistant, Full Scholarship<br>
@@ -137,7 +261,7 @@
                 Machine Learning, Natural Language Processing & Text Analysis
             </li>
             <li>
-                <strong>Bachelor’s in Computer Engineering, Nov 2014 - Oct 2018</strong><br>
+                <strong>Bachelor’s in Computer Engineering</strong><br>
                 <i>Tribhuvan University, Kathmandu, Nepal</i><br>
                 Grade: 80.61% (Distinction)<br>
                 Honors: Semester Topper (2016), Full Scholarship (2015, 2016)<br>
@@ -150,7 +274,7 @@
 
 <section id="projects" class="section">
     <div class="content">
-        <h2>Projects</h2>
+        <h2>Personal Projects</h2>
         <ul>
             <li style="margin-bottom: 15px;">
                 <strong>Hotel Rating System</strong> | <a href="https://github.com/Amit-Maharjan/SpringBoot-Microservices" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
@@ -175,7 +299,7 @@
                 </div>
             </li>
             <li style="margin-bottom: 15px;">
-                <strong>RMIPSS System</strong> | <a href="https://github.com/HannahMTaylor/RMIPSS_System" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
+                <strong>RMIPSS System</strong> | <a href="https://github.com/Amit-Maharjan/RMIPSS_System" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
                 <i style="font-size: 15px;">ASP .NET MVC, .NET Identity, Entity Framework, SQL Server, Docker, Docker Compose, SMTP2go, Bootstrap, Toastr.js</i>
                 <div class="project-desc">
                     Built a web-based application for the Republic of the Marshall Islands Public School System (RMIPSS System) to streamline and digitize the
@@ -253,22 +377,19 @@
     <div class="content">
         <h2>Technical Skills</h2>
         <ul>
-            <li><strong>Programming Languages:</strong> Java (Java 8, Java 21), Groovy, C#, Python, C, C++, Microsoft Dynamics NAV</li>
-            <li><strong>Frameworks:</strong> Frameworks: J2EE, Spring Framework, Spring Boot, Spring MVC, Spring Security, JPA, Hibernate, Grails, ASP.NET MVC,
-                .NET Core, Entity Framework</li>
-            <li><strong>Front End Technologies:</strong> HTML5, CSS3, Bootstrap, JavaScript (ES6+), jQuery, Thymeleaf, XML</li>
-            <li><strong>Microservices & API Management:</strong> Spring Cloud, Netflix Eureka, API Gateway, Apache Kafka, OAuth2, JWT</li>
-            <li><strong>Database:</strong> MySQL, Postgres, SQL Server, MongoDB, Redis</li>
-            <li><strong>AWS:</strong> Amazon EC2, Amazon RDS, AWS S3, AWS SQS, AWS IAM, Amazon Kinesis, AWS CloudWatch</li>
-            <li><strong>DevOps:</strong> Docker, Kubernetes, Git, CI/CD (Jenkins, GitHub Actions), Maven, Gradle</li>
-            <li><strong>Tools:</strong> IntelliJ IDEA, NetBeans, Eclipse, Visual Studio, VS Code, Sublime, Git</li>
-            <li><strong>Platforms:</strong> MAC, Linux, Windows</li>
+            <li><strong>Backend:</strong> Java 8/11/17/21, Spring Boot, REST APIs, JPA, Hibernate, JDBC, Groovy, C#, C, C++, Microsoft Dynamics NAV, Python, Grails, ASP.NET MVC, .NET Core, Entity Framework, Microservices</li>
+            <li><strong>Frontend:</strong> Angular 10/14/16, TypeScript, RxJS, HTML5, CSS3, SCSS, Material Design</li>
+            <li><strong>Cloud & DevOps:</strong> AWS (ECS, EC2, S3, Lambda, RDS, CloudWatch, Parameter Store), Docker, Jenkins, GitHub, Cloudformation</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, DynamoDB, Redis</li>
+            <li><strong>Messaging:</strong> Kafka, Topic Retry, Schema Registry, Message Offsets, Event-Driven</li>
+            <li><strong>Security:</strong> OAuth2, JWT, RBAC, Spring Security Filters, API Gateway</li>
+            <li><strong>Testing:</strong> JUnit, Mockito, TestNG, Cucumber, JMeter, K6</li>
+            <li><strong>Deployment:</strong> Blue-Green, Canary, Docker, CI/CD Pipelines, ECS, Kubernetes</li>
+            <li><strong>Monitoring:</strong> Splunk, OpenTelemetry, CloudWatch, New Relic</li>
+            <li><strong>Tools & Process:</strong> GitHub, Bitbucket, JIRA, Confluence, Agile, IntelliJ, Maven, NPM</li>
             <li><strong>Machine Learning & NLP:</strong> TextBlob, VADER, DistilBERT, Flair, Pandas, NumPy, TensorFlow, Scikit-learn, Matplotlib,
                 Natural Language Processing, Sentiment Analysis, Predictive Analytics, Data Analytics & Visualization, Data Preprocessing, Feature Engineering,
                 Topic Modeling</li>
-            <li><strong>Others:</strong> Apereo CAS, Elasticsearch, Logstash, Kibana, Jira, Agile Methodologies, Unit Testing
-                (JUnit, Spock, NUnit), Team Leading, Communication, Requirement Analysis
-            </li>
         </ul>
     </div>
 </section>
@@ -293,7 +414,7 @@
                         class="fab fa-facebook"></i> Facebook</a>
                 <a href="https://www.instagram.com/amit.maharjan" target="_blank" class="social-link"><i
                         class="fab fa-instagram"></i> Instagram</a>
-                <a href="mailto:maharjanamit8@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="mailto:maharjan.amit007@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
     </div>
