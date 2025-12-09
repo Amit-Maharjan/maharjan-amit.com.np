@@ -4,321 +4,620 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amit Maharjan</title>
-    <link rel="stylesheet" href="styles.css?ver=1.4">
+    <link rel="stylesheet" href="styles.css?ver=5.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
-
 </head>
 <body>
 <header>
     <nav class="navbar">
-        <div class="navbar-brand">Amit Maharjan</div>
+        <div class="navbar-left">
+            <div class="navbar-brand">Amit Maharjan</div>
+        </div>
         <div class="navbar-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
         <ul class="navbar-links" id="navbar-links">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Download Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#profile" class="nav-link active">Profile</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="profile" class="section">
-    <div class="content">
-        <h2>Profile</h2>
-        <div class="profile-container">
-            <img src="images/personal_picture.jpeg" alt="Amit Maharjan" class="profile-pic">
-            <p>
-                Versatile Full Stack Java Developer experienced in designing, building, and optimizing scalable enterprise applications using Java, Spring Boot,
-                Spring MVC, Hibernate/JPA, and distributed system patterns. Skilled in developing secure REST/SOAP APIs, implementing authentication and
-                authorization workflows (JWT, OAuth2, SAML, CAS SSO), and building resilient cloud-native services on AWS. Strong background in modernizing legacy
-                Java systems, improving performance through caching and SQL tuning, and leveraging event-driven architectures with Kafka and AWS SQS. Adept at
-                collaborating in Agile teams, troubleshooting complex production issues, mentoring peers, and delivering maintainable, high-quality solutions
-                across diverse technology stacks. Well-rounded academic foundation in software engineering with hands-on project experience in microservices,
-                machine learning, and full-stack development.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="experience" class="section">
-    <div class="content">
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                <strong>Compunnel, Inc., Princeton, NJ</strong><br>
-                <i>Senior Full Stack Java Developer, Sep 2025 - Present</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Designed, developed, and enhanced Java/J2EE enterprise modules (EAR/WAR) using Spring MVC/Boot, Struts2, Servlets, EJBs, Hibernate/JPA,
-                        JDBC, and Oracle 19c across Unix/Solaris/Windows environments, delivering scalable, secure, and maintainable application functionality</li>
-                    <li>Built and consumed REST and SOAP-based integrations, including XSD-based validation, XML parsing, security headers, and custom Spring-based
-                        load balancing and service discovery</li>
-                    <li>Modernized legacy components by designing and building Spring Boot microservices, improving system reliability, reducing latency, and
-                        enabling dynamic endpoint routing while ensuring maintainability aligned with Agile SDLC practices</li>
-                    <li>Developed responsive UI features using Angular/TypeScript, JavaScript, jQuery, Bootstrap, HTML5/CSS3, ensuring seamless JSON/XML data
-                        exchange with backend APIs and collaborating with UI/UX teams to confirm design feasibility</li>
-                    <li>Deployed, monitored, and optimized Java applications on WebSphere, WebLogic, Apache Tomcat, and Linux environments, resolving issues related
-                        to SSL certificates, JVM tuning, thread/heap bottlenecks, deployments, and PL/SQL performance to ensure stable production operations</li>
-                </ul>
-            </li>
-
-            <li>
-                <strong>East Tennessee State University, Johnson City, TN</strong><br>
-                <i>Graduate Teaching Assistant, Aug 2023 - May 2025</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Instructed and facilitated lab sessions for 7 sections covering IT fundamentals and web development, supporting 50–100 students per
-                        class</li>
-                    <li>Assisted in redesigning curriculum content by incorporating AI, digital citizenship, and modern development practices, resulting in a
-                        measurable 42% improvement in student performance</li>
-                    <li>Supported students through one-on-one tutoring, office hours, and technical coaching, enabling them to effectively grasp IT fundamentals,
-                        programming principles, and web technologies</li>
-                    <li>Mentored and trained new teaching assistants on course delivery, grading standards, lab procedures, and student engagement best
-                        practices</li>
-                </ul>
-            </li>
-
-            <li>
-                <strong>Cedar Gate Technologies, Kathmandu, Nepal</strong><br>
-                <i>Software Engineer, Dec 2020 - July 2022</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Designed, developed, and deployed scalable Java/Spring applications using Java, Spring Framework, Spring MVC, Spring Security, and
-                        Hibernate/JPA, supporting distributed enterprise applications and modular plugin architectures</li>
-                    <li>Implemented RESTful APIs with secured integrations using Spring Security, SAML, and JWT, following enterprise-grade authentication and
-                        authorization patterns</li>
-                    <li>Built asynchronous, event-driven workflows using AWS SQS with application-level message validation, automated retries, dead-letter queues
-                        (DLQs), and resilient processing patterns to support high-volume enterprise operations</li>
-                    <li>Improved system performance by 35% through intelligent Redis (AWS ElastiCache) caching, SQL tuning, and Spring Data JPA optimization,
-                        reducing API latency and improving throughput</li>
-                    <li>Deployed and managed services on AWS EC2 and Apache Tomcat, and automated CI/CD pipelines for reliable and repeatable deployments</li>
-                    <li>Monitored application health and performance using Spring Actuator, AWS CloudWatch, and ELK stack (Elasticsearch, Logstash, Kibana),
-                        enabling proactive diagnostics and issue resolution</li>
-                    <li>Collaborated with design teams, DBA, QA, and product teams in Agile ceremonies, facilitating smooth overall integration and contributing
-                        to a 20% improvement in sprint delivery velocity</li>
-                </ul>
-
-                <i>Associate Software Engineer, June 2019 - Nov 2020</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Developed a centralized Java/Spring authentication microservice supporting 12 internal applications and 400K+ users, integrating Apereo
-                        CAS for secure Single Sign-On (SSO)</li>
-                    <li>Built automated reporting pipelines using Cron jobs and Amazon SQS, increasing analytics accuracy by 40% and streamlining operational
-                        insights</li>
-                    <li>Set up observability using AWS CloudWatch and ELK stack, reducing mean time to resolution (MTTR) from 6 hours to 30 minutes through
-                        proactive alerting and log aggregation</li>
-                    <li>Boosted backend performance by 50% by optimizing SQL stored procedures, tuning queries, and refactoring service logic to reduce response
-                        times by 30%</li>
-                    <li>Participated in Agile SDLC processes, writing clean, testable Java code, contributing to design discussions, and delivering production-ready
-                        features aligned with enterprise development standards</li>
-                </ul>
-            </li>
-
-            <li>
-                <strong>Leapfrog Technology Inc., Kathmandu, Nepal</strong><br>
-                <i>Software Engineering Intern, Mar 2019 - May 2019</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Developed responsive web pages using HTML, CSS, and JavaScript, ensuring smooth user interactions and cross-browser compatibility</li>
-                    <li>Increased frontend performance by 30% by implementing lazy loading, reducing initial load time, and improving overall user experience</li>
-                    <li>Contributed to organizing CSS/JS assets and refining component-level logic, improving modularity and maintainability across frontend pages</li>
-                </ul>
-            </li>
-
-            <li>
-                <strong>Agile Solutions Pvt. Ltd., Kathmandu, Nepal</strong><br>
-                <i>Software Engineering Trainee, Nov 2018 - Feb 2019</i><br><br>
-                <strong><u>Responsibilities:</u></strong><br>
-                <ul>
-                    <li>Developed an ERP system using Microsoft Dynamics NAV, improving efficiency and automating business processes</li>
-                    <li>Contributed to the migration of legacy ERP data, ensuring 99.9% data integrity and a seamless transition with minimal downtime</li>
-                    <li>Identified and resolved inconsistencies in NAV form configurations and data mappings, ensuring accurate behavior of ERP modules during testing</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="education" class="section">
-    <div class="content">
-        <h2>Education</h2>
-        <ul>
-            <li style="margin-bottom: 15px;">
-                <strong>Master’s in Computer Science (Software Engineering), Aug 2023 - May 2025</strong><br>
-                <i>East Tennessee State University, Johnson City, TN</i><br>
-                GPA: 4.0<br>
-                Coursework: Software Engineering, Software Design, Software Verification & Validation, Software Production, Software Project Management, Data Analytics & Visualization,
-                Machine Learning, Natural Language Processing & Text Analysis
-            </li>
-            <li>
-                <strong>Bachelor’s in Computer Engineering, Nov 2014 - Oct 2018</strong><br>
-                <i>Tribhuvan University, Kathmandu, Nepal</i><br>
-                Grade: 80.61% (Distinction)<br>
-                Coursework: Computer Programming, Object Oriented Programming, Data Structure & Algorithm, Computer Organization & Architecture,
-                Software Engineering, Computer Graphics, Database Management System, Artificial Intelligence, Distributed System, Data Mining, Big Data Technologies,
-                Object Oriented Analysis & Design
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="projects" class="section">
-    <div class="content">
-        <h2>Personal Projects</h2>
-        <ul>
-            <li style="margin-bottom: 15px;">
-                <strong>Hotel Rating System</strong> | <a href="https://github.com/Amit-Maharjan/SpringBoot-Microservices" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
-                <i style="font-size: 15px;">Spring Boot, Spring Security, JWT, REST API, REST Template, Feign, Kafka, Microservice, MySQL, MongoDB</i>
-                <div class="project-desc">
-                    Developed a hotel rating system using a microservices-based architecture, comprising three independent services that communicated seamlessly
-                    through REST APIs. Deployed an API Gateway to manage and streamline service communication, ensuring efficient and secure interactions between
-                    services. Implemented a Eureka Server for dynamic service discovery, enabling microservices to register and locate each other with ease, thereby
-                    enhancing system scalability and reliability.
+<main>
+    <!-- HERO / PROFILE -->
+    <section id="profile" class="section section-hero">
+        <div class="content hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span>Amit Maharjan</span>!</h1>
+                <p class="hero-subtitle">
+                    Versatile Full Stack Java Developer focused on scalable enterprise systems, secure APIs,
+                    and modernizing legacy Java platforms into resilient, cloud-ready architectures.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#resume" class="btn btn-outline">Download Resume</a>
                 </div>
-
-                <div class="project-desc">
-                    Designed and deployed a centralized configuration server using GitHub to manage application properties, ensuring consistency, simplified
-                    maintenance, and scalability. Integrated a robust authentication system as an independent microservice that interfaced with the API Gateway.
-                    The authentication service utilized JWT tokens to validate user credentials and enforce secure access control, adding an additional layer of
-                    security to the application.
+            </div>
+            <div class="hero-profile">
+                <div class="profile-card">
+                    <img src="images/personal_picture.jpeg" alt="Amit Maharjan" class="profile-pic">
+                    <p class="profile-summary">
+                        Versatile Full Stack Java Developer experienced in designing, building, and optimizing scalable enterprise
+                        applications using Java, Spring Boot, Spring MVC, Hibernate/JPA, and distributed system patterns. Skilled in
+                        developing secure REST/SOAP APIs, implementing authentication and authorization workflows (JWT, OAuth2, SAML,
+                        CAS SSO), and building resilient cloud-native services on AWS. Strong background in modernizing legacy Java
+                        systems, improving performance through caching and SQL tuning, and leveraging event-driven architectures with
+                        Kafka and AWS SQS. Adept at collaborating in Agile teams, troubleshooting complex production issues, mentoring
+                        peers, and delivering maintainable, high-quality solutions across diverse technology stacks.
+                    </p>
                 </div>
-
-                <div class="project-desc">
-                    This project demonstrates expertise in building scalable systems, managing microservices architecture, implementing API-driven communication,
-                    and incorporating secure authentication mechanisms into modern software applications.
-                </div>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <strong>RMIPSS System</strong> | <a href="https://github.com/Amit-Maharjan/RMIPSS_System" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
-                <i style="font-size: 15px;">ASP .NET MVC, .NET Core, .NET Identity, Entity Framework, SQL Server, Docker, Docker Compose, SMTP2go, Bootstrap, Toastr.js</i>
-                <div class="project-desc">
-                    Built a web-based application for the Republic of the Marshall Islands Public School System (RMIPSS System) to streamline and digitize the
-                    Individualized Education Program (IEP) process, eliminating manual paperwork and improving accessibility for educators. Implemented a bilingual
-                    translation feature, allowing seamless switching between English and Marshallese on all web forms. Integrated real-time form validation to
-                    enhance data accuracy and prevent errors during data entry. Incorporated secure authentication and authorization using .NET Identity, ensuring
-                    role-based access control for different user levels. Added automated email notifications via SMTP2go API to keep administrators and educators
-                    informed about critical updates. Designed and delivered a user-friendly interface using ASP.NET MVC and Bootstrap, ensuring ease of use and
-                    accessibility. Deployed the system using Docker and Docker Compose on Oracle Cloud VM, enabling scalability and efficient resource management.
-                </div>
-
-                <div class="project-desc">
-                    This project demonstrates strong skills in web application development, user interface design, and workflow automation.
-                </div>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <strong>University Recommendation System</strong> | <a href="https://github.com/Amit-Maharjan/ML_Final_Project-University_Recommendation_System/tree/master/Code" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
-                <i style="font-size: 15px;">Python, Pandas, NumPy, Scikit-learn, Matplotlib, Standard Scaler</i>
-                <div class="project-desc">
-                    Developed a machine learning-based University Recommendation System to assist international students in selecting suitable US universities for
-                    graduate programs. Leveraged a Kaggle dataset containing over 53,000 entries and implemented data preprocessing techniques to ensure data consistency
-                    and accuracy. Utilized supervised machine learning models, including Logistic Regression Decision Tree, Random Forest, Support Vector Machine (SVM),
-                    K Nearest Neighbors (KNN), and Naive Bayes to predict admission chances. The Decision Tree model achieved the highest precision (84%),
-                    identifying high-ranked universities, while Naive Bayes demonstrated high recall (89.53%) for universities with high admission certainty.
-                </div>
-
-                <div class="project-desc">
-                    The project highlighted skills in predictive analytics, model evaluation, and data-driven decision-making.
-                </div>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <strong>Sentiment Analysis on Airline Reviews</strong> | <a href="https://github.com/Amit-Maharjan/Sentiment-Analysis-on-Airline-Reviews" target="_blank" style="font-size: 15px;"> GitHub Link</a> |
-                <i style="font-size: 15px;">Python, Pandas, NumPy, Scikit-learn, TextBlob, VADER, DistilBERT, Flair, Matplotlib, NLP techniques</i>
-                <div class="project-desc">
-                    Developed a sentiment analysis system to analyze customer reviews for various airlines using Natural Language Processing (NLP) techniques.
-                    The project aimed to classify reviews into positive, negative, or neutral categories and identify common themes that impact customer satisfaction.
-                    Processed over 23,000 reviews from a Kaggle dataset, cleaned and prepared the data, and applied multiple sentiment analysis models, including
-                    TextBlob, VADER, DistilBERT, and Flair.
-                </div>
-
-                <div class="project-desc">
-                    The analysis highlighted the best and worst-performing airlines and provided actionable insights for improving customer experience.
-                </div>
-            </li>
-            <li style="margin-bottom: 15px;">
-                <strong>Hamro College</strong> | <i style="font-size: 15px;">Java, Android SDK, Firebase, XML, Android Emulator</i>
-                <div class="project-desc">
-                    Developed an Android-based application designed to assist students, teachers, and college staff with various academic and administrative tasks.
-                    The application includes features such as attendance tracking, notifications, daily class schedule viewing, final internal mark calculation,
-                    and other college-related activities. Contributed to the project as part of a team, focusing on user interface design, report development,
-                    and data collection.
-                </div>
-
-                <div class="project-desc">
-                    This application was developed as a Major Project, showcasing collaborative development and problem-solving skills.
-                </div>
-            </li>
-            <li>
-                <strong>Optical Character Recognition Using Neural Network</strong> | <i style="font-size: 15px;">Python, OpenCV, NumPy, Pandas, TensorFlow, Keras</i>
-                <div class="project-desc">
-                    Created a Python program that scans images containing Devanagari script and converts them into machine-encoded text. This program was developed
-                    as a Minor Project and included two main components: Image Processing and Machine Learning. Contributed to the Image Processing part by implementing
-                    techniques to preprocess and enhance images for accurate text recognition.
-                </div>
-
-                <div class="project-desc">
-                    The project showcased the practical application of OCR for regional scripts and demonstrated teamwork and problem-solving skills.
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section id="skills" class="section">
-    <div class="content">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Java, Python, C#, C/C++, Groovy</li>
-            <li><strong>Frameworks & Libraries:</strong> Spring Boot, Spring MVC, Spring Security, Spring Cloud, Hibernate/JPA, Struts2, ASP.NET MVC, .NET Core, Entity Framework, Grails, JUnit, Spock</li>
-            <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS, SQS, CloudWatch, Lambda, IAM), Oracle Cloud, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, Linux/Unix/Solaris environments</li>
-            <li><strong>APIs & Integrations:</strong> REST, SOAP, Swagger/OpenAPI, JSON, XML, XSD, YAML, Postman, SAML, OAuth2, JWT, Feign Client, Eureka, API Gateway</li>
-            <li><strong>Messaging & Distributed Systems:</strong> Kafka, AWS SQS, Event-driven architecture, Microservices, Service discovery, Resilient/Retry messaging, DLQ patterns</li>
-            <li><strong>Databases:</strong> MySQL, PostgreSQL, SQL Server, MongoDB, Oracle 19c, Redis (ElastiCache)</li>
-            <li><strong>Frontend: </strong> Angular, TypeScript, JavaScript, jQuery, Bootstrap, HTML5/CSS3</li>
-            <li><strong>Observability & Monitoring:</strong> ELK Stack (Elasticsearch, Logstash, Kibana), AWS CloudWatch, Spring Actuator</li>
-            <li><strong>Tools & Platforms: </strong> Git, GitHub, Maven, Gradle, Jira, IntelliJ IDEA, Visual Studio, WebSphere, WebLogic, Apache Tomcat, Docker Compose</li>
-            <li><strong>Machine Learning & NLP:</strong> TextBlob, VADER, DistilBERT, Flair, Pandas, NumPy, TensorFlow, Scikit-learn, Matplotlib,
-                Natural Language Processing, Sentiment Analysis, Predictive Analytics, Data Analytics & Visualization, Data Preprocessing, Feature Engineering,
-                Topic Modeling</li>
-        </ul>
-    </div>
-</section>
-
-<section id="resume" class="section">
-    <div class="content">
-        <h2>Download Resume</h2>
-        <a href="resume/Amit_Maharjan_Resume.pdf" download class="btn">Download Resume</a>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <div class="content">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/amitmaharjan" target="_blank" class="social-link"><i
-                        class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/Amit-Maharjan" target="_blank" class="social-link"><i
-                        class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.facebook.com/amit.maharjan.982" target="_blank" class="social-link"><i
-                        class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://www.instagram.com/amit.maharjan" target="_blank" class="social-link"><i
-                        class="fab fa-instagram"></i> Instagram</a>
-                <a href="mailto:maharjanamit8@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="content">
+            <h2>Experience</h2>
+            <ul class="timeline experience-list">
+
+                <!-- Compunnel -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">Present</div>
+                    <div class="timeline-card">
+
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>Compunnel, Inc.</strong>
+                                <span class="item-dates">Sep 2025 – Present</span>
+                            </div>
+                            <span class="item-location">Princeton, NJ</span>
+                        </div>
+
+                        <div class="role-block">
+                            <span class="item-role">Senior Full Stack Java Developer</span>
+                            <ul class="role-list">
+                                <li>Designed, developed, and enhanced Java/J2EE enterprise modules (EAR/WAR) using Spring MVC/Boot, Struts2, Servlets, EJBs, Hibernate/JPA,
+                                    JDBC, and Oracle 19c across Unix/Solaris/Windows environments, delivering scalable, secure, and maintainable application functionality.</li>
+                                <li>Built and consumed REST and SOAP-based integrations, including XSD-based validation, XML parsing, security headers, and custom Spring-based
+                                    load balancing and service discovery.</li>
+                                <li>Modernized legacy components by designing and building Spring Boot microservices, improving system reliability, reducing latency, and
+                                    enabling dynamic endpoint routing while ensuring maintainability aligned with Agile SDLC practices.</li>
+                                <li>Developed responsive UI features using Angular/TypeScript, JavaScript, jQuery, Bootstrap, HTML5/CSS3, ensuring seamless JSON/XML data
+                                    exchange with backend APIs and collaborating with UI/UX teams to confirm design feasibility.</li>
+                                <li>Deployed, monitored, and optimized Java applications on WebSphere, WebLogic, Apache Tomcat, and Linux environments, resolving issues related
+                                    to SSL certificates, JVM tuning, thread/heap bottlenecks, deployments, and PL/SQL performance to ensure stable production operations.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- ETSU GTA -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2025</div>
+                    <div class="timeline-card">
+
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>East Tennessee State University</strong>
+                                <span class="item-dates">Aug 2023 – May 2025</span>
+                            </div>
+                            <span class="item-location">Johnson City, TN</span>
+                        </div>
+
+                        <div class="role-block">
+                            <span class="item-role">Graduate Teaching Assistant</span>
+                            <ul class="role-list">
+                                <li>Instructed and facilitated lab sessions for 7 sections covering IT fundamentals and web development, supporting 50–100 students per
+                                    class.</li>
+                                <li>Assisted in redesigning curriculum content by incorporating AI, digital citizenship, and modern development practices, resulting in a
+                                    measurable 42% improvement in student performance.</li>
+                                <li>Supported students through one-on-one tutoring, office hours, and technical coaching, enabling them to effectively grasp IT fundamentals,
+                                    programming principles, and web technologies.</li>
+                                <li>Mentored and trained new teaching assistants on course delivery, grading standards, lab procedures, and student engagement best
+                                    practices.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- Cedar Gate: two roles -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2022</div>
+                    <div class="timeline-card">
+
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>Cedar Gate Technologies</strong>
+                                <span class="item-dates">June 2019 – July 2022</span>
+                            </div>
+                            <span class="item-location">Kathmandu, Nepal</span>
+                        </div>
+
+                        <!-- Software Engineer -->
+                        <div class="role-block">
+                            <div class="item-top-row role-top-row">
+                                <span class="item-role">Software Engineer</span>
+                                <span class="item-dates">Dec 2020 – July 2022</span>
+                            </div>
+                            <ul class="role-list">
+                                <li>Designed, developed, and deployed scalable Java/Spring applications using Java, Spring Framework, Spring MVC, Spring Security, and
+                                    Hibernate/JPA, supporting distributed enterprise applications and modular plugin architectures.</li>
+                                <li>Implemented RESTful APIs with secured integrations using Spring Security, SAML, and JWT, following enterprise-grade authentication and
+                                    authorization patterns.</li>
+                                <li>Built asynchronous, event-driven workflows using AWS SQS with application-level message validation, automated retries, dead-letter queues
+                                    (DLQs), and resilient processing patterns to support high-volume enterprise operations.</li>
+                                <li>Improved system performance by 35% through intelligent Redis (AWS ElastiCache) caching, SQL tuning, and Spring Data JPA optimization,
+                                    reducing API latency and improving throughput.</li>
+                                <li>Deployed and managed services on AWS EC2 and Apache Tomcat, and automated CI/CD pipelines for reliable and repeatable deployments.</li>
+                                <li>Monitored application health and performance using Spring Actuator, AWS CloudWatch, and ELK stack (Elasticsearch, Logstash, Kibana),
+                                    enabling proactive diagnostics and issue resolution.</li>
+                                <li>Collaborated with design teams, DBA, QA, and product teams in Agile ceremonies, facilitating smooth overall integration and contributing
+                                    to a 20% improvement in sprint delivery velocity.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Associate Software Engineer -->
+                        <div class="role-block">
+                            <div class="item-top-row role-top-row">
+                                <span class="item-role">Associate Software Engineer</span>
+                                <span class="item-dates">June 2019 – Nov 2020</span>
+                            </div>
+                            <ul class="role-list">
+                                <li>Developed a centralized Java/Spring authentication microservice supporting 12 internal applications and 400K+ users, integrating Apereo
+                                    CAS for secure Single Sign-On (SSO).</li>
+                                <li>Built automated reporting pipelines using Cron jobs and Amazon SQS, increasing analytics accuracy by 40% and streamlining operational
+                                    insights.</li>
+                                <li>Set up observability using AWS CloudWatch and ELK stack, reducing mean time to resolution (MTTR) from 6 hours to 30 minutes through
+                                    proactive alerting and log aggregation.</li>
+                                <li>Boosted backend performance by 50% by optimizing SQL stored procedures, tuning queries, and refactoring service logic to reduce response
+                                    times by 30%.</li>
+                                <li>Participated in Agile SDLC processes, writing clean, testable Java code, contributing to design discussions, and delivering production-ready
+                                    features aligned with enterprise development standards.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- Leapfrog -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2019</div>
+                    <div class="timeline-card">
+
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>Leapfrog Technology Inc.</strong>
+                                <span class="item-dates">Mar 2019 – May 2019</span>
+                            </div>
+                            <span class="item-location">Kathmandu, Nepal</span>
+                        </div>
+
+                        <div class="role-block">
+                            <span class="item-role">Software Engineering Intern</span>
+                            <ul class="role-list">
+                                <li>Developed responsive web pages using HTML, CSS, and JavaScript, ensuring smooth user interactions and cross-browser compatibility.</li>
+                                <li>Increased frontend performance by 30% by implementing lazy loading, reducing initial load time, and improving overall user experience.</li>
+                                <li>Contributed to organizing CSS/JS assets and refining component-level logic, improving modularity and maintainability across frontend pages.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- Agile Solutions -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2019</div>
+                    <div class="timeline-card">
+
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>Agile Solutions Pvt. Ltd.</strong>
+                                <span class="item-dates">Nov 2018 – Feb 2019</span>
+                            </div>
+                            <span class="item-location">Kathmandu, Nepal</span>
+                        </div>
+
+                        <div class="role-block">
+                            <span class="item-role">Software Engineering Trainee</span>
+                            <ul class="role-list">
+                                <li>Developed an ERP system using Microsoft Dynamics NAV, improving efficiency and automating business processes.</li>
+                                <li>Contributed to the migration of legacy ERP data, ensuring 99.9% data integrity and a seamless transition with minimal downtime.</li>
+                                <li>Identified and resolved inconsistencies in NAV form configurations and data mappings, ensuring accurate behavior of ERP modules during testing.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <div class="content">
+            <h2>Education</h2>
+            <ul class="timeline education-list">
+                <!-- Masters -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2025</div>
+                    <div class="timeline-card">
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>East Tennessee State University</strong>
+                                <span class="item-dates">Aug 2023 – May 2025</span>
+                            </div>
+                            <span class="item-degree">M.S. in Computer Science (Software Engineering)</span>
+                            <span class="item-location">Johnson City, TN</span>
+                        </div>
+                        <div class="role-block">
+                            <ul class="role-list">
+                                <li><strong>GPA:</strong> 4.0</li>
+                                <li><strong>Coursework:</strong> Software Engineering, Software Design, Software Verification &amp; Validation,
+                                    Software Production, Software Project Management, Data Analytics &amp; Visualization, Machine Learning,
+                                    Natural Language Processing &amp; Text Analysis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Bachelors -->
+                <li class="timeline-item">
+                    <div class="timeline-badge">2018</div>
+                    <div class="timeline-card">
+                        <div class="item-header company-header">
+                            <div class="item-top-row">
+                                <strong>Tribhuvan University</strong>
+                                <span class="item-dates">Nov 2014 – Oct 2018</span>
+                            </div>
+                            <span class="item-degree">B.E. in Computer Engineering</span>
+                            <span class="item-location">Kathmandu, Nepal</span>
+                        </div>
+                        <div class="role-block">
+                            <ul class="role-list">
+                                <li><strong>Grade:</strong> 80.61% (Distinction)</li>
+                                <li><strong>Coursework:</strong> Computer Programming, Object Oriented Programming, Data Structure &amp; Algorithm,
+                                    Computer Organization &amp; Architecture, Software Engineering, Computer Graphics, Database Management System,
+                                    Artificial Intelligence, Distributed System, Data Mining, Big Data Technologies, Object Oriented Analysis &amp; Design.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="content">
+            <h2>Personal Projects</h2>
+            <ul class="projects-grid">
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>Hotel Rating System</strong>
+                        <a href="https://github.com/Amit-Maharjan/SpringBoot-Microservices" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project-tech">
+                        Spring Boot, Spring Security, JWT, REST API, REST Template, Feign, Kafka, Microservice, MySQL, MongoDB
+                    </p>
+                    <p class="project-desc">
+                        Developed a microservices-based hotel rating system with three independent services communicating via REST APIs.
+                        Implemented an API Gateway and Eureka Server for centralized routing and service discovery, improving scalability and reliability.
+                    </p>
+                    <p class="project-desc">
+                        Built a centralized configuration server using GitHub-backed config, and implemented a dedicated authentication microservice using JWT to secure access through the gateway.
+                    </p>
+                    <p class="project-desc">
+                        This demonstrates expertise in scalable microservice design, secure API communication, and distributed configuration management.
+                    </p>
+                </li>
+
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>RMIPSS System</strong>
+                        <a href="https://github.com/Amit-Maharjan/RMIPSS_System" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project-tech">
+                        ASP .NET MVC, .NET Core, .NET Identity, Entity Framework, SQL Server, Docker, Docker Compose, SMTP2go, Bootstrap, Toastr.js
+                    </p>
+                    <p class="project-desc">
+                        Built a web app for the Republic of the Marshall Islands Public School System to digitize the IEP process, replacing manual paperwork.
+                    </p>
+                    <p class="project-desc">
+                        Implemented bilingual English/Marshallese forms, real-time validation, secure role-based access with .NET Identity, and automated notifications via SMTP2go.
+                    </p>
+                    <p class="project-desc">
+                        Deployed the application using Docker and Docker Compose on <a href="http://129.213.121.228:8080/" target="_blank">Oracle Cloud VM</a>, demonstrating end-to-end delivery from UX to infrastructure.
+                    </p>
+                </li>
+
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>University Recommendation System</strong>
+                        <a href="https://github.com/Amit-Maharjan/ML_Final_Project-University_Recommendation_System/tree/master/Code"
+                           target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project-tech">
+                        Python, Pandas, NumPy, Scikit-learn, Matplotlib, Standard Scaler
+                    </p>
+                    <p class="project-desc">
+                        Developed a machine learning-based system to recommend US universities for international students using a 53K+ entry Kaggle dataset.
+                    </p>
+                    <p class="project-desc">
+                        Trained models including Logistic Regression, Decision Tree, Random Forest, SVM, KNN, and Naive Bayes; the Decision Tree achieved 84% precision for high-ranked universities, while Naive Bayes reached 89.53% recall for high-certainty admissions.
+                    </p>
+                    <p class="project-desc">
+                        This highlights strengths in predictive analytics, model evaluation, and data-driven decision-making.
+                    </p>
+                </li>
+
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>Sentiment Analysis on Airline Reviews</strong>
+                        <a href="https://github.com/Amit-Maharjan/Sentiment-Analysis-on-Airline-Reviews"
+                           target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <p class="project-tech">
+                        Python, Pandas, NumPy, Scikit-learn, TextBlob, VADER, DistilBERT, Flair, Matplotlib, NLP techniques
+                    </p>
+                    <p class="project-desc">
+                        Built a sentiment analysis pipeline for 23K+ airline reviews to classify feedback into positive, negative, or neutral classes.
+                    </p>
+                    <p class="project-desc">
+                        Evaluated multiple models (TextBlob, VADER, DistilBERT, Flair) and surfaced insights about best and worst-performing airlines.
+                    </p>
+                </li>
+
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>Hamro College</strong>
+                    </div>
+                    <p class="project-tech">
+                        Java, Android SDK, Firebase, XML, Android Emulator
+                    </p>
+                    <p class="project-desc">
+                        Built an Android app to support students, teachers, and staff with attendance, notifications, class schedules, internal mark calculation, and other academic tasks.
+                    </p>
+                    <p class="project-desc">
+                        Contributed on UI design, reporting, and data collection as part of a collaborative major project.
+                    </p>
+                </li>
+
+                <li class="project-card">
+                    <div class="project-header">
+                        <strong>Optical Character Recognition Using Neural Network</strong>
+                    </div>
+                    <p class="project-tech">
+                        Python, OpenCV, NumPy, Pandas, TensorFlow, Keras
+                    </p>
+                    <p class="project-desc">
+                        Implemented OCR for Devanagari script with image processing and machine learning components in Python.
+                    </p>
+                    <p class="project-desc">
+                        Focused on image preprocessing and enhancement for accurate recognition, demonstrating the practical application of neural networks to regional scripts.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="content">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3>Backend &amp; Core</h3>
+                    <div class="skill-group">
+                        <span class="skill-label">Languages</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Groovy</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Frameworks</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring MVC</span>
+                            <span class="skill-tag">Spring Security</span>
+                            <span class="skill-tag">Spring Cloud</span>
+                            <span class="skill-tag">Hibernate/JPA</span>
+                            <span class="skill-tag">Struts2</span>
+                            <span class="skill-tag">ASP.NET MVC</span>
+                            <span class="skill-tag">.NET Core</span>
+                            <span class="skill-tag">Entity Framework</span>
+                            <span class="skill-tag">Grails</span>
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Spock</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Databases</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Oracle 19c</span>
+                            <span class="skill-tag">Redis (ElastiCache)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3>Cloud, DevOps &amp; Platforms</h3>
+                    <div class="skill-group">
+                        <span class="skill-label">Cloud</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS EC2</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">AWS RDS</span>
+                            <span class="skill-tag">AWS SQS</span>
+                            <span class="skill-tag">AWS CloudWatch</span>
+                            <span class="skill-tag">AWS Lambda</span>
+                            <span class="skill-tag">AWS IAM</span>
+                            <span class="skill-tag">Oracle Cloud</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">DevOps</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker Compose</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Linux/Unix/Solaris</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">APIs &amp; Integrations</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST</span>
+                            <span class="skill-tag">SOAP</span>
+                            <span class="skill-tag">Swagger/OpenAPI</span>
+                            <span class="skill-tag">JSON</span>
+                            <span class="skill-tag">XML/XSD</span>
+                            <span class="skill-tag">SAML</span>
+                            <span class="skill-tag">OAuth2</span>
+                            <span class="skill-tag">JWT</span>
+                            <span class="skill-tag">Feign</span>
+                            <span class="skill-tag">Eureka</span>
+                            <span class="skill-tag">API Gateway</span>
+                            <span class="skill-tag">Postman</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Tools</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Maven</span>
+                            <span class="skill-tag">Gradle</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">IntelliJ</span>
+                            <span class="skill-tag">Visual Studio</span>
+                            <span class="skill-tag">WebSphere</span>
+                            <span class="skill-tag">WebLogic</span>
+                            <span class="skill-tag">Tomcat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3>Distributed Systems &amp; Data</h3>
+                    <div class="skill-group">
+                        <span class="skill-label">Messaging &amp; Architecture</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">AWS SQS</span>
+                            <span class="skill-tag">Event-driven</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Service discovery</span>
+                            <span class="skill-tag">Retry/DLQ patterns</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">Observability</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ELK Stack</span>
+                            <span class="skill-tag">Elasticsearch</span>
+                            <span class="skill-tag">Logstash</span>
+                            <span class="skill-tag">Kibana</span>
+                            <span class="skill-tag">Spring Actuator</span>
+                            <span class="skill-tag">AWS CloudWatch</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-label">ML &amp; Analytics</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">TextBlob</span>
+                            <span class="skill-tag">VADER</span>
+                            <span class="skill-tag">DistilBERT</span>
+                            <span class="skill-tag">Flair</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Sentiment Analysis</span>
+                            <span class="skill-tag">Predictive Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section section-resume">
+        <div class="content">
+            <h2>Download Resume</h2><br>
+            <a href="resume/Amit_Maharjan_Resume.pdf" download class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amitmaharjan" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Amit-Maharjan" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.facebook.com/amit.maharjan.982" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/amit.maharjan" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:maharjanamit8@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2025 Amit Maharjan</p>
