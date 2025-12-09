@@ -167,8 +167,8 @@ body {
     border-color: #de814d; /* Orange border on hover */
 }
 
-/* CV Button */
-#cv .btn {
+/* Resume Button */
+#resume .btn {
     display: inline-block;
     background-color: #1a1a1a;
     color: #fff;
@@ -181,7 +181,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#cv .btn:hover {
+#resume .btn:hover {
     background-color: #333;
     transform: translateY(-5px);
 }
@@ -281,4 +281,9 @@ footer:hover {
         gap: 0.5em;
         justify-content: center;
     }
+}
+
+.project-desc {
+    margin-left: 5px;
+    margin-bottom: 8px;
 }
